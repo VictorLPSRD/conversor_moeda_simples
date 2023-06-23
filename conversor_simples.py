@@ -59,42 +59,42 @@ def conve():
         resp_libra = (moeda_flo/libra_hj)
         resp_iene = (moeda_flo/iene_hoje)
         # Onde começa operações condicionais.
-        if escolha_int == 1:
+        if escolha_int == 1: # Resultado do dolar.
             print('Você tem em reais: {}'.format(moeda_flo))
             print('O dolar tar: {}'.format(dolar_hoje))
             print('Em doloras [EUA] você tera: {}'.format(resp_dolar))
             print(20*'=')
             print("")
 
-        elif escolha_int == 2:
+        elif escolha_int == 2: # Resultado do PESO.
             print('Você tem em reais: {}'.format(moeda_flo))
             print('O (PESO) hoje ta:  {}'.format(peso_hj))
             print('Em peso argetino você tera: {}'.format(resp_peso))
             print('')
 
-        elif escolha_int == 3:
+        elif escolha_int == 3: # Resultado do EURO.
             print('Você tem em reais: {}'.format(moeda_flo))
             print('O (EURO) hoje ta {}'.format(euro_hj))
             print('Em EURO você tera: {}'.format(resp_euro))
             print(20*'=')
             print("")
 
-        elif escolha_int == 4:
+        elif escolha_int == 4: # Resultado do LIBRA.
             print('Você tem em reais: {}'.format(moeda_flo))
             print('A (libra) hoje ta {}'.format(libra_hj))
             print('Em libra você tera:{}'.format(resp_libra))
             print(20*'=')
             print("")
 
-        elif escolha_int == 5:
+        elif escolha_int == 5: # Resultado do IENE.
             print('você tem em reais:{}'.format(moeda_flo))
             print('O iene hoje ta {}'.format(iene_hoje))
             print('Em iene vc tera:{:.4}'.format(resp_iene))
             print(20*'==')
             print("")                               #vl
 
-        else:
-            print('Você não digitou um numero')
+        else: # Se não digita nada.
+            print('Você não digitou um numero') # Exibi isso.
 
     except:  # Se ocorre um erro no try ele entra no except e execulta esse print.
         print('Escolha um nuemro valido')
